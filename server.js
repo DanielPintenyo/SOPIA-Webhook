@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const NASA_API_KEY = process.env.NASA_API_KEY;
 
 app.get("/health", (req, res) => {
@@ -412,8 +412,8 @@ else if (intent === "SOPIA_searchmissionimages") {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
   console.log(
-    `S.O.P.I.A. está escuchando en http://localhost:${PORT}`
+    `S.O.P.I.A. está escuchando en el puerto ${PORT}`
   );
 });
