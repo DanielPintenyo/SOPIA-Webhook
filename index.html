@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.O.P.I.A. - Chatbot astronómico</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="S.O.P.I.A."
+    agent-id="a39ded56-b454-4022-ae42-6981128b3083"
+    language-code="es">
+  </df-messenger>
+</body>
+</html>
